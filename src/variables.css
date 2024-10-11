@@ -1,0 +1,8 @@
+/* src/variables.css */
+:root {
+    --background-color: #000000;
+    --primary-color: #00ff00; /* Hacker green */
+    --secondary-color: #ffffff; /* White for contrast */
+    --accent-color: #ff0000; /* Red for buttons or highlights */
+  }
+  

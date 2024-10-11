@@ -1,16 +1,26 @@
-/* src/App.css */
+@import './variables.css';
+
 body, html, #root {
   margin: 0;
   padding: 0;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 .App {
   position: relative;
   min-height: 100%;
   overflow-x: hidden;
+  color: var(--primary-color);
 }
 
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 60px; /* Add padding to separate from header */
+}
 
 canvas {
   position: fixed !important;

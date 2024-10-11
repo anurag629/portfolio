@@ -1,0 +1,31 @@
+/* src/components/Header.css */
+.header {
+    text-align: center;
+    margin-top: 50px;
+    color: #00ff00; /* Green text to match the hacker theme */
+  }
+  
+  .profile-image {
+    width: 15vw; /* 15% of the viewport width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 50%;
+    border: 3px solid #00ff00;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-image:hover {
+    transform: scale(1.05);
+  }
+
+  .name {
+    font-size: 2em;
+    margin-top: 20px;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-top: 10px;
+    color: #00ff00;
+  }
+  
