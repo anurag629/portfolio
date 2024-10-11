@@ -1,0 +1,72 @@
+.terminal {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  height: auto;
+  margin: 20px auto;
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #00ff00;
+  color: #00ff00;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background: #111;
+}
+
+.buttons {
+  display: flex;
+  margin-right: 10px;
+}
+
+.buttons span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.close {
+  background: #ff5f56;
+}
+
+.minimize {
+  background: #ffbd2e;
+}
+
+.maximize {
+  background: #27c93f;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.terminal-body {
+  padding: 10px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.terminal-body a {
+  color: #00ff00;
+  text-decoration: underline;
+}
+
+.terminal-body strong {
+  font-weight: bold;
+}
