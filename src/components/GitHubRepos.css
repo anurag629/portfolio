@@ -1,0 +1,41 @@
+/* src/components/GitHubRepos.css */
+
+.github-repos {
+    margin: 50px auto;
+    max-width: 800px;
+    text-align: center;
+    color: var(--primary-color);
+  }
+  
+  .repos-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .repo-card {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: left;
+  }
+  
+  .repo-card h3 a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .repo-card p {
+    font-size: 0.9em;
+    margin: 10px 0;
+  }
+  
+  .repo-stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+  }
+  

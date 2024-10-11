@@ -9,6 +9,7 @@ import {
   FaProjectDiagram,
   FaCertificate,
   FaTools,
+  FaFilePdf,
 } from 'react-icons/fa';
 import './SideMenu.css';
 
@@ -56,6 +57,7 @@ const SideMenu = () => {
     { id: 'projects', label: 'Projects', icon: <FaProjectDiagram /> },
     { id: 'certifications', label: 'Certifications', icon: <FaCertificate /> },
     { id: 'skills', label: 'Skills', icon: <FaTools /> },
+    { id: 'resume', label: 'Resume', icon: <FaFilePdf /> },
   ];
 
   // Toggle menu open/close

@@ -2,10 +2,10 @@
 import React, { useState } from 'react';
 import MatrixBackground from './components/MatrixBackground';
 import SideMenu from './components/SideMenu';
-import Navbar from './components/Navbar';
 import Header from './components/Header'; 
 import TerminalWindow from './components/TerminalWindow';
 import BackToTop from './components/BackToTop';
+import GitHubRepos from './components/GitHubRepos';
 import resumeData from './resumeData';
 import './App.css';
 
@@ -27,13 +27,22 @@ function App() {
   return (
     <div className="App">
       <MatrixBackground />
-      {/* <Navbar /> */}
       <SideMenu />
       <Header />
       <div className="container">
         {sections.map((key, index) => {
           if (index > currentSectionIndex) {
-            return null;
+            // return null;
+            return (
+              <TerminalWindow
+                key={key}
+                id={key}
+                title={resumeData[key].title}
+                content={resumeData[key].content}
+                start={index === currentSectionIndex}
+                onTypingComplete={handleTypingComplete}
+              />
+            );
           }
           return (
             <TerminalWindow
@@ -47,6 +56,7 @@ function App() {
           );
         })}
       </div>
+      <GitHubRepos />
       <BackToTop />
     </div>
   );

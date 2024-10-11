@@ -13,7 +13,7 @@ const TerminalWindow = ({ title, id, content, start, onTypingComplete }) => {
     hasTyped.current = true;
 
     let i = 0;
-    const speed = 10;
+    const speed = 0.0005;
 
     const typingEffect = () => {
       if (i < content.length) {
