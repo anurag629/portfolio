@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="App">
       <MatrixBackground />
-      <SideMenu />
+      <SideMenu /> 
       <Header />
       <div className="container">
         {sections.map((key, index) => {
